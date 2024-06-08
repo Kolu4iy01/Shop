@@ -1,5 +1,6 @@
-FROM python:3.7-slim
-MAINTAINER Mykhailo Lazoryk
+FROM python:3.10-slim
+
+MAINTAINER Mykola Zhu
 
 ENV PYTHONUNBUFFERED 1
 
