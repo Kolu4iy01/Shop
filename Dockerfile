@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10-alpine
 
 MAINTAINER Mykola Zhu
 
@@ -12,6 +12,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN useradd user
+RUN adduser -D user
 
 USER user
